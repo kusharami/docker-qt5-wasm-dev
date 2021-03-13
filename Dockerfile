@@ -17,9 +17,9 @@ RUN apt-get -qq -y update \
 		-prefix /qt5-wasm-dev \
 	&& make -j${nproc} \
 	&& make install \
-	&& apt-get -y clean
-    && apt-get -y autoclean \
-    && apt-get -y autoremove
+	&& apt-get -y clean \
+	&& apt-get -y autoclean \
+	&& apt-get -y autoremove \
 	&& rm -rf /qt5_source \
 	&& apt-get -qq -y update \
 	&& apt-get -qq -y --no-install-recommends install \
