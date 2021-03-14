@@ -8,7 +8,6 @@ RUN apt-get -qq -y update \
 	&& apt-get -y --no-install-recommends install \
 		perl \
 	&& unset CONFIG \
-	&& mkdir .git \
 	&& ./configure \
 		-xplatform wasm-emscripten \
 		-nomake examples -nomake tests \
