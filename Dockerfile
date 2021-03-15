@@ -21,7 +21,7 @@ RUN apt-get -qq -y update \
 	&& rm -rf /qt5_source \
 	&& rm -rf /var/lib/apt/lists/*
 
-ENV PATH /qt5-wasm-dev:$PATH
+ENV PATH /qt5-wasm-dev/bin:$PATH
 
 VOLUME /build
 WORKDIR /build
