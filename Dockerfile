@@ -8,7 +8,6 @@ RUN apt-get -qq -y update \
 	&& apt-get -y --no-install-recommends install \
 		perl \
 	&& unset CONFIG \
-	&& echo "Number of cores $(nproc)" \	
 	&& ./configure \
 		-xplatform wasm-emscripten \
 		-nomake examples -nomake tests \
