@@ -22,7 +22,7 @@ RUN unset CONFIG \
 # ---------------------------
 FROM emscripten/emsdk:1.39.4-upstream
 
-COPY --from=0 /qt5-wasm-dev /
+COPY --from=0 /qt5-wasm-dev /qt5-wasm-dev
 
 ENV PATH /qt5-wasm-dev/bin:$PATH
 
